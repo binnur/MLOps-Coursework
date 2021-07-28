@@ -1,7 +1,9 @@
 #!/bin/zsh
-# using custom docker build
-docker run -it --rm -p 8888:8888 -p 8000:8000 --mount type=bind,source="$(pwd)",target=/home/jovyan/work binnur/jupyter-notebook
-# using jupyter notebooks
+# This file is DEPRECATED: it is available for historical data
+# Use 'docker-compose up' instead (see README.md)
+# using custom docker build to enable installing requirements.txt
+#docker run -it --rm -p 8888:8888 -p 8000:8000 --mount type=bind,source="$(pwd)",target=/home/jovyan/work binnur/jupyter-notebook
+# using jupyter notebooks`
 #docker run -it --rm -p 8888:8888 -p 8000:8000 --mount type=bind,source="$(pwd)",target=/home/jovyan/work jupyter/datascience-notebook:latest
-# original
+# original instructions
 #docker run -it --rm -p 8888:8888 -p 8000:8000 --mount type=bind,source="$(pwd)",target=/home/jovyan/work deeplearningai/mlepc1w1-ugl:jupyternb
