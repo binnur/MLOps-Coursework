@@ -11,4 +11,7 @@ services:
     ports:
       - 8888:8888
       - 8000:8000
+    environment:
+      # Required for FastAPI uvicorn setup
+      - "DOCKER-SETUP=1"
 
