@@ -4,6 +4,7 @@ services:
   ml-notebook:
     # path to Dockerfile, which is in current directory w/ docker-compose.yml
     build: .
+    image: ml-notebook:MLOps
     container_name: ml-notebook-container
     working_dir: /home/jovyan/work
     volumes: 
